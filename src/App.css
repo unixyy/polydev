@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-title {
-    animation: App-header infinite 360s linear;
+    animation: App-title infinite 5s cubic-bezier(1,0.3,0.3,1) both alternate;
   }
 }
 
@@ -25,7 +25,7 @@
 
 .App-title {
   font-family: 'Nabla', cursive;
-  font-size: 180px;
+  font-size: 200px;
   color: white;
   user-select: none;
 }
@@ -34,11 +34,11 @@
   color: #61dafb;
 }
 
-@keyframes App-header {
+@keyframes App-title {
   from {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(1.5);
   }
 }
