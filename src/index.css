@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');*/
+
+@font-face {
+    font-family: 'Nabla';
+    src: url('./fonts/Nabla-Regular-VariableFont_EDPT,EHLT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
+  background-color: #282c34;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -9,7 +17,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

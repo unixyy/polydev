@@ -1,3 +1,36 @@
+:root {
+  --scaling:1.5;
+  --sizeLogo:25vh;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --scaling:1.35;
+    --sizeLogo:20vh;
+  }
+}
+
+@media (max-width: 613px) {
+  :root {
+    --scaling:1.2;
+    --sizeLogo:15vh;
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    --scaling:1.15;
+    --sizeLogo:12vh;
+  }
+}
+
+@media (max-width: 394px) {
+  :root {
+    --scaling:1.1;
+    --sizeLogo:10vh;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -9,12 +42,11 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-title {
-    animation: App-title infinite 5s cubic-bezier(1,0.3,0.3,1) both alternate;
+    animation: App-title infinite 5s cubic-bezier(.71,0,.36,1) both alternate;
   }
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +57,7 @@
 
 .App-title {
   font-family: 'Nabla', cursive;
-  font-size: 200px;
+  font-size: var(--sizeLogo);
   color: white;
   user-select: none;
 }
@@ -39,6 +71,6 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.5);
+    transform: scale(var(--scaling));
   }
 }
