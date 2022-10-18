@@ -55,15 +55,37 @@
 
 }
 
+.App-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .App-title {
   font-family: 'Nabla', cursive;
   font-size: var(--sizeLogo);
   color: white;
   user-select: none;
+  margin: 10vh;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.slider{
+  cursor: pointer;
+}
+
+.jstslogo {
+  height: 60vh;
+  pointer-events: none;
+}
+
+.hidden{
+  visibility: hidden;
 }
 
 @keyframes App-title {
@@ -73,4 +95,5 @@
   to {
     transform: scale(var(--scaling));
   }
+
 }
